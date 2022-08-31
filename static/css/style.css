@@ -62,7 +62,7 @@ input[type="submit"] {
 
 .btn-edit {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   margin-top: 15px;
   margin-bottom: 10px;
   border: none;
@@ -76,12 +76,27 @@ input[type="submit"] {
 
 .btn-delete {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   margin-top: 15px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
   background-color: #dd7973;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.btn-new-contact {
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4681f4;
   color: #fff;
   padding: 15px 25px;
   font-size: 16px;
@@ -110,6 +125,10 @@ tr {
   border-bottom: 1px solid lightgray;
 }
 
+tr:last-child {
+  border: none;
+}
+
 th {
   width: 150px;
 }
@@ -136,3 +155,4 @@ a {
   font-weight: 500;
   padding: 30px;
 }
+
