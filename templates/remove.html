@@ -7,14 +7,14 @@
   <title>Contacts CRUD APP | Delete Contact</title>
 </head>
 <body>
-  <form method="POST">
+  <form method="POST" action="">
     {% csrf_token %}
     <br>
     <div role="alert">
       Are you sure you want to delete "{{ contact.first_name }} + {{ contact.last_name }}"?
     </div>
     <p>
-      <a href="{% url 'retrive_contact' %}">Return</a>
+      <a href="{% url 'retrieve-contact' %}">Return</a>
     </p>
     <p>
       <input type="submit" value="Confirm">

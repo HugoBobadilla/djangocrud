@@ -33,7 +33,7 @@ def update_contact(request, pk):
     form = ContactForm(request.POST, instance=contacts)
     if form.is_valid():
       form.save()
-      return redirect('search/')
+      return redirect('/search')
 
   context = {
     'contacts': contacts,
@@ -47,8 +47,8 @@ def delete_contact(request, pk):
   contact = Contact.objects.get(contactId=pk)
 
   if request.method == "POST":
-    contacts.delete()
-    return redirect('search/')
+    contact.delete()
+    return redirect('/search')
 
   context = {
     'contact': contact

@@ -25,10 +25,10 @@
         <td>{{ contact.phone_number }}</td>
         <td>{{ contact.address }}</td>
         <td>
-          <a href="/update/{{blog.pk}}">Update</a>
+          <a href="/update/{{contact.contactId}}">Update</a>
         </td>
         <td>
-          <a href="/delete/{{blog.pk}}">Delete</a>
+          <a href="/delete/{{contact.contactId}}">Delete</a>
         </td>
       </tr>
       {% endfor %}
