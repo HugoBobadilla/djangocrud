@@ -11,7 +11,7 @@ def crate_contact(request):
     if form.is_valid():
       try:
         form.save()
-        return redirect('search/')
+        return redirect('/')
       except:
         pass
   else:
@@ -22,7 +22,7 @@ def crate_contact(request):
 
 def retrieve_contact(request):
   contacts = Contact.objects.all()
-  return render(request, 'search.html', {'contacts': contacts})
+  return render(request, 'index.html', {'contacts': contacts})
 
 
 def update_contact(request, pk):
@@ -33,7 +33,7 @@ def update_contact(request, pk):
     form = ContactForm(request.POST, instance=contacts)
     if form.is_valid():
       form.save()
-      return redirect('/search')
+      return redirect('/')
 
   context = {
     'contacts': contacts,
@@ -48,7 +48,7 @@ def delete_contact(request, pk):
 
   if request.method == "POST":
     contact.delete()
-    return redirect('/search')
+    return redirect('/')
 
   context = {
     'contact': contact

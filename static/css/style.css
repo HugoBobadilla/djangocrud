@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  max-width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(42, 59, 59);
+  margin: 30px 0px;
+}
+
+label {
+  display: block;
+  margin: 8px 0px;
+  font-weight: 500;
+}
+
+input[type="text"] {
+  border: thin solid gray;
+  border-radius: 5px;
+  padding: 7px;
+  height: 40px;
+  width: 100%;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px gray;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4681f4;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-edit {
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5adbb5;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-delete {
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dd7973;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+.form {
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #E5E4E2;
+  padding: 20px;
+  box-shadow: 0px 0px 4px gray;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid lightgray;
+}
+
+th {
+  width: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.remove-form {
+  width: 90%;
+  box-shadow: 0px 0px 5px lightgrey;
+  border-radius: 5px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  border-radius: 5px;
+  background-color: rgb(235, 88, 110);
+  color: #fff;
+  font-weight: 500;
+  padding: 30px;
+}
